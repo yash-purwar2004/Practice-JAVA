@@ -196,26 +196,62 @@
 
 
 
+//import java.util.*;
+//public class Main{
+//    public static void printjava(){
+//        System.out.println("Print Java");
+//    }
+//
+//    public static void printname(String name){
+//        System.out.println(name);
+//    }
+//
+//    public static void printnum(int a, int b){
+//        int sum = a+b;
+//        System.out.println(sum);
+//    }
+//    public static void main(String[] args) {
+//        printjava();
+//        printjava();
+//
+//        printname("Yash");
+//
+//        printnum(3,5);
+//    }
+//}
+
+
+
+
+
+
+
+
+// Mini Project
 import java.util.*;
 public class Main{
-    public static void printjava(){
-        System.out.println("Print Java");
-    }
-
-    public static void printname(String name){
-        System.out.println(name);
-    }
-
-    public static void printnum(int a, int b){
-        int sum = a+b;
-        System.out.println(sum);
-    }
     public static void main(String[] args) {
-        printjava();
-        printjava();
+        Scanner sc = new Scanner(System.in);
+        int number = (int)Math.random()*100;
+        int usernumber;
+        do{
+            System.out.println("Guess my number");
+            usernumber = sc.nextInt();
+            if(usernumber == number){
+                System.out.println("WHOO.... CORRECT NUMBER");
+                break;
+            }
 
-        printname("Yash");
+            else if (usernumber>number) {
+                System.out.println("Your number is too large");
+            }
 
-        printnum(3,5);
+            else {
+                System.out.println("Your number is too small");
+            }
+        } while (usernumber>=0);
+
+        System.out.println("My number was");
+        System.out.println(number);
     }
 }
