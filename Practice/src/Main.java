@@ -72,9 +72,150 @@
 
 
 
+// Code for taking input in JAVA
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Input your age: ");
+//        int age = sc.nextInt(); // replace int with float, byte, long, boolean;
+//        System.out.println(age);
+
+//        System.out.println("Input your name: ");
+//        String name = sc.next(); // This function is used for input a string as a token
+//        System.out.println(name);
+
+//        System.out.println("Input your name: ");
+//        String name1 = sc.nextLine(); // This function is used for input a string as a line
+//        System.out.println(name1);
+//    }
+//}
+
+
+
+// Conditonal Statements
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+//        boolean issumup = true;
+//        if(issumup == true){  //true/false
+//            System.out.println("DAY");
+//        }
+//
+//        else{
+//            System.out.println("NIGHT");
+//        }
+//    }
+//}
+
+
+
+// Logical Operators
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+//        int a = 20;
+//        int b = 30;
+//
+//        if (a < 50 && b < 50) { // ||, !
+//            System.out.println("Both are less than 50");
+//        }
+//    }
+//}
+
+
+
+
+// Conditional Statement - Switch Case
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+//        int day = 2;
+//        switch(day){
+//            case 1:
+//                System.out.println("Monday");
+//                break;
+//
+//            case 2:
+//                System.out.println("Tuesday");
+//                break;
+//
+//            default:
+//                System.out.println("Wednesday - Sunday");
+//                break;
+//        }
+//    }
+//}
+
+
+
+// Loops
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+        // for loop
+//        for(int i=1; i<=100; i++){
+//            System.out.println(i);
+//        }
+
+        // while loop
+//        int i=1;
+//        while(i<=100) {
+//            System.out.println(i);
+//            i++;
+//        }
+
+        // do while loop
+//        int k = 1;
+//        do {
+//            System.out.println(k);
+//            k++;
+//        }while (k<=100);
+
+//    }
+//}
+
+
+
+// Exceptional Handling - Try and Catch
+//import java.util.*;
+//public class Main{
+//    public static void main(String[] args) {
+//        int[] marks={34, 56, 78};
+//        try {
+//            System.out.println(marks[5]);
+//        } catch (Exception exception){
+//            // do something after catching
+//            System.out.println(marks[2]);
+//        }
+//
+//        System.out.println("The student name is sanskriti");
+//    }
+//}
+
+
+
+
 import java.util.*;
 public class Main{
+    public static void printjava(){
+        System.out.println("Print Java");
+    }
+
+    public static void printname(String name){
+        System.out.println(name);
+    }
+
+    public static void printnum(int a, int b){
+        int sum = a+b;
+        System.out.println(sum);
+    }
     public static void main(String[] args) {
-        
+        printjava();
+        printjava();
+
+        printname("Yash");
+
+        printnum(3,5);
     }
 }
